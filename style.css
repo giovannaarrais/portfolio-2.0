@@ -145,7 +145,7 @@ body{
     
     
 
-    font-family: "Roboto Condesend";
+    font-family: "Roboto Condesend", sans-serif;
 }
 
 #inicio{
@@ -287,8 +287,59 @@ hr{
 
 .eu p{
     margin-top: 20px;
-    font-family: 'Gill Sans MT', Calibri, sans-serif;
+    font-family: "Roboto Condesend", sans-serif;
     font-size: 17px;
     width: 45vw;
     line-height: 22px;
 }
+
+#tecnologias{
+    background-image: url(images/papel-parede2.webp);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+
+    padding-top: 7rem;
+
+    text-align: center;
+    color: #fff;   
+
+}
+
+.icones-1, .icones-2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icones-1 div, .icones-2 div{ 
+    background-image:  url(images/banner-tech.png);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+
+    font-family: "Roboto Condesend", sans-serif;
+    background-color: #eee8e813;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 30px;
+    justify-content: space-between;
+
+    width: 250px;
+    height: auto;
+   
+
+    transition-duration: 1s;
+}
+
+.icones-1 div h4, .icones-2 div h4 {
+    padding: 20px 0px 10px 0px;
+}
+
+.icones-1 div:hover, .icones-2 div:hover{
+    transform: scale(1.05);
+}
+
+
