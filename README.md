@@ -2,7 +2,7 @@
 
 Olá! Meu nome é Giovanna Arrais 👋.
 
-E este é o meu primeiro portfólio onde eu compartilho alguns dos meus conhecimentos em desenvolvimento Front-End.
+Está é a ideia de um portfólio onde eu compartilho alguns dos meus conhecimentos em desenvolvimento Front-End.
 
 
 ## 🛠 Habilidades utilizadas
