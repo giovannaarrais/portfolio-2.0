@@ -315,7 +315,11 @@ body{
 
 .icones-tech img{
     padding-top: 10px;
+    transition-duration: 0.4s;
+}
 
+.icones-tech img:hover{
+    transform: scale(1.1);
 }
 
 
