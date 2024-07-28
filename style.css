@@ -388,13 +388,10 @@ body{
     padding-bottom: 10px;
 }
 
-
-
 .icon-code{
     width: 18px;
     padding-left: 3px;
-    position: relative;
-    left: 16vw;
+    
 }
 
 @media (max-width:750px) {
