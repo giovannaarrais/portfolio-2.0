@@ -14,7 +14,7 @@ Para fazer o portifólio, utilizei:
 
 
 ## 🔗 Links e Contato
-Para entrar em contato comigo, você pode enviar um e-mail para giovannaarrais14@gmail.com
+Para entrar em contato comigo, você pode enviar um e-mail para giovannaarrais.dev@gmail.com
 
 Também estou no LinkedIn: [giovannaarrais](https://www.linkedin.com/in/giovannaarrais/)
 
