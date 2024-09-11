@@ -289,7 +289,7 @@ body{
     font-size: 17px;
     width: 40vw;
     line-height: 22px;
-    text-align: center;
+    text-align: start;
     margin: auto;
     padding-top: 20px;
 }
