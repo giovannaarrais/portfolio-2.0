@@ -246,17 +246,27 @@ body{
 }
 
 
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1199px) {
     .boneca{
         display: none;
     }
-    #sobre{
-        display: block;
+    .eu p{
+        width: 60vw !important;
     }
 
-    
-    
-
+    .icones-tech{
+        width: 60vw !important;
+    }
+  
+    .sobre-container{
+        flex-direction: column;   
+    }
+    #tecnologias{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 #sobre{
@@ -266,11 +276,16 @@ body{
     background-position: center;
     padding: 80px 0px;
     color: #fff;
-  
-
+    justify-content: center;
     display: flex;
-    justify-content: space-around;
 }
+
+.sobre-container{
+    width: 65vw;
+    justify-content: center;
+    display: flex;
+}
+
 
 .eu{
     padding: 40px;
@@ -296,6 +311,7 @@ body{
 
 #tecnologias{
     margin: auto;
+    margin-left: 2rem;
 }
 
 #tecnologias h1{
@@ -312,7 +328,7 @@ body{
     border: 1px solid #04faf6;
 
     padding: 20px;
-    width: 40vw;
+    width: 35vw;
 
     font-size: 17px;
     opacity: .9;
@@ -333,9 +349,6 @@ body{
 
 
 @media (max-width:1100px) {
-    #sobre{
-        display: block;
-    }
 
     #tecnologias h1{
         margin-top: 6rem;
@@ -343,14 +356,9 @@ body{
         margin-bottom: 3.5rem;
     }
 
-    .eu p{
-        width: 65vw;
-        
-    }
-
-    .icones-tech{
+    /* .icones-tech{
         width: 60vw;
-    }
+    } */
 }
 
 #contato{
@@ -431,10 +439,17 @@ body{
 
 }
 
-@media screen and (max-width: 366px) {
+@media screen and (max-width: 575px) {
     .eu img{
-        width: 250px;
+        width: 200px;
     }
+    .eu{
+        padding: 0;
+    }
+    #tecnologias{
+        margin-left: 0;
+    }
+ 
     #tecnologias h1{
         font-size: 2rem;
     }
