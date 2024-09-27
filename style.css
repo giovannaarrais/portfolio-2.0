@@ -125,12 +125,10 @@ span{
     }
 
     #header{
-        position: relative;
         background-color: #534DA3;
         position: fixed;
         width: 100%;
         z-index: 10;
-
     }
     
 }
