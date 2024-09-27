@@ -15,6 +15,7 @@
     display: flex; /*para deixar lado a lado*/
     justify-content: space-between; /*vai dar o espaço entre eles*/
     padding: 1.5rem 6rem;
+    position: relative;
 
     font-family: "Roboto Condensed", sans-serif;
 
@@ -123,6 +124,13 @@ span{
         display: block;
     }
     
+}
+
+.open{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    background-color: #534DA3;
 }
 
 .icon-code-principal{
