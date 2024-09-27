@@ -86,7 +86,7 @@ span{
 }
 @media screen and (max-width: 780px) {
     .nav-bar {
-        padding: 1.5rem 4rem;
+        padding: 1.5rem 2rem;
     }
     .nav-item {
         display: none;
@@ -131,6 +131,7 @@ span{
     z-index: 10;
     width: 100%;
     background-color: #534DA3;
+    border-bottom: 2px solid #04faf6;
 }
 
 .icon-code-principal{
