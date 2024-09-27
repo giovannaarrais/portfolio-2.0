@@ -86,7 +86,7 @@ span{
 }
 @media screen and (max-width: 780px) {
     .nav-bar {
-        padding: 1.5rem 2rem;
+        padding: 1rem 2.5rem;
     }
     .nav-item {
         display: none;
@@ -123,6 +123,15 @@ span{
     .open {
         display: block;
     }
+
+    #header{
+        position: relative;
+        background-color: #534DA3;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+
+    }
     
 }
 
@@ -131,7 +140,7 @@ span{
     z-index: 10;
     width: 100%;
     background-color: #534DA3;
-    border-bottom: 2px solid #04faf6;
+    border-bottom: 1px solid #04faf6;
 }
 
 .icon-code-principal{
@@ -139,6 +148,8 @@ span{
     padding-left: 3px;
 
 }
+
+
 
 
 
@@ -434,7 +445,7 @@ body{
     }
 
     #inicio{
-        padding-top: 8vh;
+        padding-top: 20vh;
         }
 
 }
