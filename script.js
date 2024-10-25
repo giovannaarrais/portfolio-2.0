@@ -80,13 +80,15 @@ function conteudoHtml(){
 }
 
 function conteudoCss(){
-    paragrafoTech.innerHTML = `CSS é chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos escritos em uma linguagem de marcação como HTML. O CSS separa o conteúdo da representação visual do site..`;
+    paragrafoTech.innerHTML = `CSS é chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos escritos em uma linguagem de marcação como HTML. O CSS separa o conteúdo da representação visual do site.`;
     iconsTech.style.backgroundColor = ' #1572B6';
 }
 
 function conteudoJs(){
-    paragrafoTech.innerHTML = `CSS é chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos escritos em uma linguagem de marcação como HTML. O CSS separa o conteúdo da representação visual do site..`;
-    iconsTech.style.backgroundColor = ' #1572B6';
+    paragrafoTech.innerHTML = `JavaScript é essencial para a web porque proporciona interatividade, permite manipulação dinâmica do DOM e facilita a comunicação assíncrona com servidores, melhorando a experiência do usuário.`;
+    iconsTech.style.backgroundColor = '#F7DF1E';
+    paragrafoTech.style.color = 'black'
+
 }
 
 function limpeza(){
@@ -97,9 +99,15 @@ function limpeza(){
 
 function init(){
     iconHtml.addEventListener('mouseenter', conteudoHtml);
+    iconHtml.addEventListener('click', conteudoHtml);
     iconHtml.addEventListener('mouseleave', limpeza);
 
     iconCss.addEventListener('mouseenter', conteudoCss);
+    iconCss.addEventListener('click', conteudoCss);
     iconCss.addEventListener('mouseleave', limpeza);
+
+    iconJs.addEventListener('mouseenter', conteudoJs);
+    iconJs.addEventListener('click', conteudoJs);
+    iconJs.addEventListener('mouseleave', limpeza);
 }
 init()
