@@ -88,12 +88,24 @@ function conteudoJs(){
     paragrafoTech.innerHTML = `JavaScript é essencial para a web porque proporciona interatividade, permite manipulação dinâmica do DOM e facilita a comunicação assíncrona com servidores, melhorando a experiência do usuário.`;
     iconsTech.style.backgroundColor = '#F7DF1E';
     paragrafoTech.style.color = 'black'
+}
 
+function conteudoGit(){
+    paragrafoTech.innerHTML = `O Git permite o controle de versão. Oferece um histórico detalhado, facilitando a reversão para versões anteriores,  permite que desenvolvam novas funcionalidades sem afetar o código principal.`;
+    iconsTech.style.backgroundColor = '#C24C28';
+    paragrafoTech.style.color = 'black'
+}
+
+function conteudoPhp(){
+    paragrafoTech.innerHTML = `O Git permite o controle de versão. Oferece um histórico detalhado, facilitando a reversão para versões anteriores,  permite que desenvolvam novas funcionalidades sem afetar o código principal.`;
+    iconsTech.style.backgroundColor = '#C24C28';
+    paragrafoTech.style.color = 'black'
 }
 
 function limpeza(){
     paragrafoTech.innerHTML = `No meu trabalho como <span class="colorido">desenvolvedora front-end</span>, eu me concentro em criar experiências web utilizando uma ampla de tecnologias e ferramentas. Aqui estão algumas das minhas principais habilidades:`;
     iconsTech.style.backgroundColor = 'transparent';
+    paragrafoTech.style.color = 'white'
 }
 
 
@@ -109,5 +121,9 @@ function init(){
     iconJs.addEventListener('mouseenter', conteudoJs);
     iconJs.addEventListener('click', conteudoJs);
     iconJs.addEventListener('mouseleave', limpeza);
+
+    iconGit.addEventListener('mouseenter', conteudoGit);
+    iconGit.addEventListener('click', conteudoGit);
+    iconGit.addEventListener('mouseleave', limpeza);
 }
 init()
