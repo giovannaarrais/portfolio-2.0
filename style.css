@@ -361,8 +361,8 @@ body{
     transition-duration: 0.4s;
 }
 
-.icones-tech img:hover{
-    transform: scale(1.1);
+.icones-tech img:hover,.icones-tech img:focus{
+    transform: scale(1.2);
 }
 
 
