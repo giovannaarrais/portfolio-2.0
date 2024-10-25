@@ -97,8 +97,8 @@ function conteudoGit(){
 }
 
 function conteudoPhp(){
-    paragrafoTech.innerHTML = `O Git permite o controle de versão. Oferece um histórico detalhado, facilitando a reversão para versões anteriores,  permite que desenvolvam novas funcionalidades sem afetar o código principal.`;
-    iconsTech.style.backgroundColor = '#C24C28';
+    paragrafoTech.innerHTML = `O PHP permite a criação de aplicações dinâmicas e interativas. Ele facilita a integração com bancos de dados, tornando o armazenamento e recuperação de dados mais eficientes.`;
+    iconsTech.style.backgroundColor = '#8993BE';
     paragrafoTech.style.color = 'black'
 }
 
@@ -125,5 +125,9 @@ function init(){
     iconGit.addEventListener('mouseenter', conteudoGit);
     iconGit.addEventListener('click', conteudoGit);
     iconGit.addEventListener('mouseleave', limpeza);
+
+    iconPhp.addEventListener('mouseenter', conteudoPhp);
+    iconPhp.addEventListener('click', conteudoPhp);
+    iconPhp.addEventListener('mouseleave', limpeza);
 }
 init()
