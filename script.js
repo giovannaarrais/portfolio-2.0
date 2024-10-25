@@ -61,6 +61,33 @@ window.onload = function() {
     // Seleciona o elemento <p> e atualiza o seu conteúdo
     let paragrafo = document.getElementsByClassName('apresentacao')[0];
     paragrafo.innerHTML = saudacaoNome + ' ' + nomeDia + ' gostaria de me apresentar, sou estudante de Análise e Desenvolvimento de Sistemas. Durante minha jornada acadêmica, tenho explorado algumas tecnologias para me especializar. Com um forte foco em <span class="colorido">desenvolvimento web</span>, busco desafios que me permitam aplicar meu conhecimento em <span class="colorido">soluções</span> práticas e eficientes.' ;
-
 }
 
+let iconsTech = document.querySelector('.icones-tech');
+
+let iconHtml = document.querySelector('.icon-html');
+let iconCss = document.querySelector('.icon-css');
+let iconJs = document.querySelector('.icon-js');
+let iconGit = document.querySelector('.icon-git');
+let iconPhp = document.querySelector('.icon-php');
+let paragrafoTech = document.querySelector('.paragrafo-tech');
+
+
+
+function conteudoHtml(){
+    paragrafoTech.innerHTML = `Linguagem de Marcação de Hipertexto —, o HTML é o componente base da web. Isso quer dizer que ele permite a construção de websites e a inserção de novos conteúdos, como imagens e vídeos, por meio dos hipertextos.`;
+    iconsTech.style.backgroundColor = ' #FF5733';
+}
+
+function limpeza(){
+    paragrafoTech.innerHTML = `No meu trabalho como <span class="colorido">desenvolvedora front-end</span>, eu me concentro em criar experiências web utilizando uma ampla de tecnologias e ferramentas. Aqui estão algumas das minhas principais habilidades:`;
+    iconsTech.style.backgroundColor = 'transparent';
+}
+
+
+
+function init(){
+    iconHtml.addEventListener('mouseenter', conteudoHtml);
+    iconHtml.addEventListener('mouseleave', limpeza);
+}
+init()
