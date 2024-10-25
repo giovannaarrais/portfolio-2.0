@@ -75,8 +75,18 @@ let paragrafoTech = document.querySelector('.paragrafo-tech');
 
 
 function conteudoHtml(){
-    paragrafoTech.innerHTML = `Linguagem de Marcação de Hipertexto —, o HTML é o componente base da web. Isso quer dizer que ele permite a construção de websites e a inserção de novos conteúdos, como imagens e vídeos, por meio dos hipertextos.`;
+    paragrafoTech.innerHTML = `Linguagem de Marcação de Hipertexto —, o HTML é o componente base da web. Isso quer dizer que ele permite a construção de websites e a inserção de novos conteúdos, como imagens e vídeos.`;
     iconsTech.style.backgroundColor = ' #FF5733';
+}
+
+function conteudoCss(){
+    paragrafoTech.innerHTML = `CSS é chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos escritos em uma linguagem de marcação como HTML. O CSS separa o conteúdo da representação visual do site..`;
+    iconsTech.style.backgroundColor = ' #1572B6';
+}
+
+function conteudoJs(){
+    paragrafoTech.innerHTML = `CSS é chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos escritos em uma linguagem de marcação como HTML. O CSS separa o conteúdo da representação visual do site..`;
+    iconsTech.style.backgroundColor = ' #1572B6';
 }
 
 function limpeza(){
@@ -85,9 +95,11 @@ function limpeza(){
 }
 
 
-
 function init(){
     iconHtml.addEventListener('mouseenter', conteudoHtml);
     iconHtml.addEventListener('mouseleave', limpeza);
+
+    iconCss.addEventListener('mouseenter', conteudoCss);
+    iconCss.addEventListener('mouseleave', limpeza);
 }
 init()
