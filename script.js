@@ -71,12 +71,12 @@ let iconJs = document.querySelector('.icon-js');
 let iconGit = document.querySelector('.icon-git');
 let iconPhp = document.querySelector('.icon-php');
 let paragrafoTech = document.querySelector('.paragrafo-tech');
-
+let icons = document.querySelectorAll('.icons');
 
 
 function conteudoHtml(){
     paragrafoTech.innerHTML = `Linguagem de Marcação de Hipertexto —, o HTML é o componente base da web. Isso quer dizer que ele permite a construção de websites e a inserção de novos conteúdos, como imagens e vídeos.`;
-    iconsTech.style.backgroundColor = ' #FF5733';
+    iconsTech.style.backgroundColor = ' #C24C28';
 }
 
 function conteudoCss(){
@@ -86,7 +86,7 @@ function conteudoCss(){
 
 function conteudoJs(){
     paragrafoTech.innerHTML = `JavaScript é essencial para a web porque proporciona interatividade, permite manipulação dinâmica do DOM e facilita a comunicação assíncrona com servidores, melhorando a experiência do usuário.`;
-    iconsTech.style.backgroundColor = '#F7DF1E';
+    iconsTech.style.backgroundColor = '#F7DF6E';
     paragrafoTech.style.color = 'black'
 }
 
@@ -104,7 +104,7 @@ function conteudoPhp(){
 
 function limpeza(){
     paragrafoTech.innerHTML = `No meu trabalho como <span class="colorido">desenvolvedora front-end</span>, eu me concentro em criar experiências web utilizando uma ampla de tecnologias e ferramentas. Aqui estão algumas das minhas principais habilidades:`;
-    iconsTech.style.backgroundColor = 'transparent';
+    iconsTech.style.backgroundColor = '#fcffff2d';
     paragrafoTech.style.color = 'white'
 }
 
@@ -129,5 +129,9 @@ function init(){
     iconPhp.addEventListener('mouseenter', conteudoPhp);
     iconPhp.addEventListener('click', conteudoPhp);
     iconPhp.addEventListener('mouseleave', limpeza);
+
+    // icons.addEventListener('mouseout', function(){
+
+    // })
 }
 init()
