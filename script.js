@@ -65,54 +65,57 @@ window.onload = function() {
 
 let iconsTech = document.querySelector('.icones-tech');
 
-let iconHtml = document.querySelector('.icon-html');
+let iconScss = document.querySelector('.icon-scss');
 let iconCss = document.querySelector('.icon-css');
+let iconTail = document.querySelector('.icon-tail');
 let iconJs = document.querySelector('.icon-js');
 let iconGit = document.querySelector('.icon-git');
 let iconPhp = document.querySelector('.icon-php');
+let iconReact = document.querySelector('.icon-react');
 let paragrafoTech = document.querySelector('.paragrafo-tech');
 let icons = document.querySelectorAll('.icons');
 
 
-function conteudoHtml(){
-    paragrafoTech.innerHTML = `Linguagem de Marcação de Hipertexto —, o HTML é o componente base da web. Isso quer dizer que ele permite a construção de websites e a inserção de novos conteúdos, como imagens e vídeos.`;
-    iconsTech.style.backgroundColor = ' #C24C28';
+function conteudoScss(){
+    paragrafoTech.innerHTML = `O SCSS adiciona recursos avançados como variáveis, mixins e aninhamento de seletores.
+    Facilita a escrita e manutenção de estilos com uma sintaxe mais organizada e poderosa.`;
 }
 
 function conteudoCss(){
     paragrafoTech.innerHTML = `CSS é chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos escritos em uma linguagem de marcação como HTML. O CSS separa o conteúdo da representação visual do site.`;
-    iconsTech.style.backgroundColor = ' #1572B6';
+}
+
+function conteudoTail(){
+    paragrafoTech.innerHTML = `Facilita o desenvolvimento com classes pré-definidas, eliminando a necessidade de escrever muito CSS manualmente. Proporciona agilidade e consistência no design, mantendo o código mais limpo e organizado`;
 }
 
 function conteudoJs(){
     paragrafoTech.innerHTML = `JavaScript é essencial para a web porque proporciona interatividade, permite manipulação dinâmica do DOM e facilita a comunicação assíncrona com servidores, melhorando a experiência do usuário.`;
-    iconsTech.style.backgroundColor = '#F7DF6E';
-    paragrafoTech.style.color = 'black'
 }
 
 function conteudoGit(){
     paragrafoTech.innerHTML = `O Git permite o controle de versão. Oferece um histórico detalhado, facilitando a reversão para versões anteriores,  permite que desenvolvam novas funcionalidades sem afetar o código principal.`;
-    iconsTech.style.backgroundColor = '#C24C28';
-    paragrafoTech.style.color = 'black'
 }
 
 function conteudoPhp(){
     paragrafoTech.innerHTML = `O PHP permite a criação de aplicações dinâmicas e interativas. Ele facilita a integração com bancos de dados, tornando o armazenamento e recuperação de dados mais eficientes.`;
-    iconsTech.style.backgroundColor = '#8993BE';
-    paragrafoTech.style.color = 'black'
+}
+
+
+function conteudoReact(){
+    paragrafoTech.innerHTML = `O React é uma biblioteca JavaScript focada na criação de interfaces de usuário dinâmicas e reativas.
+    Permite desenvolver aplicações web com componentes reutilizáveis e atualização eficiente de dados.`;
 }
 
 function limpeza(){
     paragrafoTech.innerHTML = `No meu trabalho como <span class="colorido">desenvolvedora front-end</span>, eu me concentro em criar experiências web utilizando uma ampla de tecnologias e ferramentas. Aqui estão algumas das minhas principais habilidades:`;
-    iconsTech.style.backgroundColor = '#fcffff2d';
-    paragrafoTech.style.color = 'white'
 }
 
 
 function init(){
-    iconHtml.addEventListener('mouseenter', conteudoHtml);
-    iconHtml.addEventListener('click', conteudoHtml);
-    iconHtml.addEventListener('mouseleave', limpeza);
+    iconScss.addEventListener('mouseenter', conteudoScss);
+    iconScss.addEventListener('click', conteudoScss);
+    iconScss.addEventListener('mouseleave', limpeza);
 
     iconCss.addEventListener('mouseenter', conteudoCss);
     iconCss.addEventListener('click', conteudoCss);
@@ -129,6 +132,14 @@ function init(){
     iconPhp.addEventListener('mouseenter', conteudoPhp);
     iconPhp.addEventListener('click', conteudoPhp);
     iconPhp.addEventListener('mouseleave', limpeza);
+
+    iconReact.addEventListener('mouseenter', conteudoReact);
+    iconReact.addEventListener('click', conteudoReact);
+    iconReact.addEventListener('mouseleave', limpeza);
+
+    iconTail.addEventListener('mouseenter', conteudoTail);
+    iconTail.addEventListener('click', conteudoTail);
+    iconTail.addEventListener('mouseleave', limpeza);
 
     // icons.addEventListener('mouseout', function(){
 
